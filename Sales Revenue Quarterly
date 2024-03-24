@@ -7,7 +7,7 @@ sales_data = {
 }
 
 # Calculate total annual sales revenue
-total_sales = sum(sales_data.values())
+total_sales = sum(sales_data.values()) 
 
 # Calculate average quarterly sales revenue
 average_sales = total_sales / len(sales_data)
