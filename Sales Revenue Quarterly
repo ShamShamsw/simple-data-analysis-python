@@ -1,0 +1,26 @@
+# Sample data: Sales revenue for each quarter of the year
+sales_data = {
+    "Q1": 25000,
+    "Q2": 32000,
+    "Q3": 28000,
+    "Q4": 35000
+}
+
+# Calculate total annual sales revenue
+total_sales = sum(sales_data.values())
+
+# Calculate average quarterly sales revenue
+average_sales = total_sales / len(sales_data)
+
+# Find the quarter with the highest sales revenue
+best_quarter = max(sales_data, key=sales_data.get)
+
+# Find the quarter with the lowest sales revenue
+worst_quarter = min(sales_data, key=sales_data.get)
+
+# Display the results
+print("Sales Analysis:")
+print(f"Total Annual Sales Revenue: ${total_sales}")
+print(f"Average Quarterly Sales Revenue: ${average_sales:.2f}")
+print(f"Best Quarter: {best_quarter} (${sales_data[best_quarter]})")
+print(f"Worst Quarter: {worst_quarter} (${sales_data[worst_quarter]})")
